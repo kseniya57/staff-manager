@@ -1,0 +1,3 @@
+mutation addPosition($input: PositionInput!) {
+    addPosition(input: $input)
+}

@@ -1,0 +1,3 @@
+mutation deleteRole($id: Int!) {
+    deleteRole(id: $id)
+}

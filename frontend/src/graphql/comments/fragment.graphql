@@ -1,0 +1,12 @@
+fragment Comment on Comment {
+    id
+    content
+    createdBy {
+        id
+        name
+        email
+        avatar
+    }
+    createdAt
+    rating
+}

@@ -1,0 +1,3 @@
+mutation addRight($input: RightInput!) {
+    addRight(input: $input)
+}

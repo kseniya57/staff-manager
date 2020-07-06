@@ -1,0 +1,3 @@
+mutation updateRight($id: Int!, $input: RightInput!) {
+    updateRight(id: $id, input: $input)
+}

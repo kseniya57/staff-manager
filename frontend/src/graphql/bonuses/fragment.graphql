@@ -1,0 +1,6 @@
+fragment Bonus on Bonus {
+    id
+    name
+    description
+    amount
+}

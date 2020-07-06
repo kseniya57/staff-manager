@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+query roles($filter: RoleFilter, $pagination: Pagination) {
+    roles(filter: $filter, pagination: $pagination) {
+        ...Role
+    }
+}

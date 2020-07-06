@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+query payrolls($filter: PayrollFilter, $pagination: Pagination, $search: WageSearchFilter) {
+    payrolls(filter: $filter, pagination: $pagination, search: $search) {
+        ...Payroll
+    }
+}

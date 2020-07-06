@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+query skills($filter: SkillFilter, $pagination: Pagination) {
+    skills(filter: $filter, pagination: $pagination) {
+        ...Skill
+    }
+}

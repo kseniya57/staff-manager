@@ -1,0 +1,36 @@
+query user($id: Int!) {
+    user(id: $id) {
+        id
+        email
+        firstName
+        middleName
+        lastName
+        name
+        phone
+        experience
+        level
+        card
+        joinedAt
+        createdAt
+        avatar
+        rights {
+            id
+            description
+        },
+        roles
+        bio
+        socialNetworks {
+            id
+            name
+            nickname
+            link
+            image
+        }
+        skills
+        tags {
+            id
+            name
+            color
+        }
+    }
+}

@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+query Check($token: String!) {
+    check(token: $token) {
+        ...AuthOutput
+    }
+}

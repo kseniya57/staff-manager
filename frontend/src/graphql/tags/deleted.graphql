@@ -1,0 +1,3 @@
+subscription tagDeleted {
+    tagDeleted
+}

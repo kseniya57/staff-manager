@@ -1,0 +1,3 @@
+mutation deletePosition($id: Int!) {
+    deletePosition(id: $id)
+}

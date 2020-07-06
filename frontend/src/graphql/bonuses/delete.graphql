@@ -1,0 +1,3 @@
+mutation deleteBonus($id: Int!) {
+    deleteBonus(id: $id)
+}

@@ -1,0 +1,8 @@
+fragment EmployeePerformanceAssessment on EmployeePerformanceAssessment {
+    status
+    date
+    user {
+        id
+        name
+    }
+}

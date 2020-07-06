@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+query socialNetworks($filter: SocialNetworkFilter, $pagination: Pagination) {
+    socialNetworks(filter: $filter, pagination: $pagination) {
+        ...SocialNetwork
+    }
+}

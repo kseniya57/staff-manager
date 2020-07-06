@@ -1,0 +1,3 @@
+mutation addSocialNetwork($input: SocialNetworkInput!) {
+    addSocialNetwork(input: $input)
+}

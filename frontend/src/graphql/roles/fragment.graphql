@@ -1,0 +1,4 @@
+fragment Role on Role {
+    id
+    name
+}

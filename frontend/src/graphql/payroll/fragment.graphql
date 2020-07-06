@@ -1,0 +1,16 @@
+fragment Payroll on Payroll {
+    id
+    amount
+    type
+    createdAt
+    createdBy {
+        id
+        name
+    },
+    user {
+        id
+        name
+    }
+    month
+    year
+}

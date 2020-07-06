@@ -1,0 +1,3 @@
+mutation updatePosition($id: Int!, $input: PositionInput!) {
+    updatePosition(id: $id, input: $input)
+}

@@ -1,0 +1,3 @@
+mutation updateSocialNetwork($id: Int!, $input: SocialNetworkInput!) {
+    updateSocialNetwork(id: $id, input: $input)
+}

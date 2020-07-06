@@ -1,0 +1,5 @@
+fragment Right on Right {
+    id
+    name
+    description
+}

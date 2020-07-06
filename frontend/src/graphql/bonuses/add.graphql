@@ -1,0 +1,3 @@
+mutation addBonus($input: BonusInput!) {
+    addBonus(input: $input)
+}

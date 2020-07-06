@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+query bonuses($filter: BonusFilter, $pagination: Pagination) {
+    bonuses(filter: $filter, pagination: $pagination) {
+        ...Bonus
+    }
+}

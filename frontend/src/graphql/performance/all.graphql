@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+query assessments($filter: EmployeePerformanceAssessmentFilter, $pagination: Pagination) {
+    assessments(filter: $filter, pagination: $pagination) {
+        ...EmployeePerformanceAssessment
+    }
+}

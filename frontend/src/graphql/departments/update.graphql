@@ -1,0 +1,3 @@
+mutation updateDepartment($id: Int!, $input: DepartmentInput!) {
+    updateDepartment(id: $id, input: $input)
+}

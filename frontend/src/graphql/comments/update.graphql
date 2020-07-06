@@ -1,0 +1,3 @@
+mutation updateComment($id: Int!, $input: CommentInput!) {
+    updateComment(id: $id, input: $input)
+}

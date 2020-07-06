@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+query comments($filter: CommentFilter, $pagination: Pagination) {
+    comments(filter: $filter, pagination: $pagination) {
+        ...Comment
+    }
+}

@@ -1,0 +1,5 @@
+fragment Expense on Expense {
+    id
+    type amount
+    description
+}

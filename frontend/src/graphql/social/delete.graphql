@@ -1,0 +1,3 @@
+mutation deleteSocialNetwork($id: Int!) {
+    deleteSocialNetwork(id: $id)
+}

@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+query positions($filter: PositionFilter, $pagination: Pagination, $search: PositionSearchFilter) {
+    positions(filter: $filter, pagination: $pagination, search: $search) {
+        ...Position
+    }
+}

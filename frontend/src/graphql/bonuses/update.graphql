@@ -1,0 +1,3 @@
+mutation updateBonus($id: Int!, $input: BonusInput!) {
+    updateBonus(id: $id, input: $input)
+}

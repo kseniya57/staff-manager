@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+query users($filter: UserFilter, $pagination: Pagination, $search: UserSearchFilter) {
+    users(filter: $filter, pagination: $pagination, search: $search) {
+        ...User
+    }
+}

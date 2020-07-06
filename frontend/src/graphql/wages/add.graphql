@@ -1,0 +1,3 @@
+mutation addWage($input: WageInput!) {
+    addWage(input: $input)
+}

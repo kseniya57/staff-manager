@@ -1,0 +1,3 @@
+mutation deleteRight($id: Int!) {
+    deleteRight(id: $id)
+}

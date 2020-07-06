@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+subscription roleAdded {
+    roleAdded {
+        ...Role
+    }
+}

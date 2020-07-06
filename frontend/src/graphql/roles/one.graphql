@@ -1,0 +1,11 @@
+#import "./fragment.graphql"
+
+query role($id: Int!) {
+    role(id: $id) {
+        ...Role
+        rights {
+            id
+            description
+        }
+    }
+}

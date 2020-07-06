@@ -1,0 +1,1 @@
+export { dbConfig } from './mysql';

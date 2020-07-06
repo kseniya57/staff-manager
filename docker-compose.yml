@@ -1,0 +1,43 @@
+version: '3.7'
+
+services:
+  staff-manager:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql
+      - redis
+    ports:
+      - 7777:4000
+    environment:
+      - WEB_PORT=4000
+      - MYSQL_USER=root
+      - REDIS_HOST=redis
+      - MYSQL_PASSWORD=12345678
+      - MYSQL_HOST=mysql
+      - MYSQL_DATABASE=staff
+      - JWT_SECRET=secret
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 3s
+        failure_action: rollback
+        order: start-first
+      placement:
+        constraints:
+          - node.role == worker
+  mysql:
+    image: "mysql:5.7"
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - 3366:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345678
+    volumes:
+      - ./sql/data:/var/lib/mysql
+      - ./sql/init:/docker-entrypoint-initdb.d/:ro
+  redis:
+    image: "redis:alpine"

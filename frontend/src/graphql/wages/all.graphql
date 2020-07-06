@@ -1,0 +1,18 @@
+query wages($filter: WageFilter, $payrollFilter: PayrollFilter, $pagination: Pagination, $search: WageSearchFilter) {
+    wages(filter: $filter, pagination: $pagination, search: $search) {
+        id
+        blackSalary
+        whiteSalary
+        status
+        paidWhiteSalary(filter: $payrollFilter)
+        paidBlackSalary(filter: $payrollFilter)
+        department {
+            id
+            name
+        }
+        position {
+            id
+            name
+        }
+    }
+}

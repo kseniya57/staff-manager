@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+query departments($filter: DepartmentFilter, $pagination: Pagination, $search: DepartmentSearchFilter) {
+    departments(filter: $filter, pagination: $pagination, search: $search) {
+        ...Department
+    }
+}

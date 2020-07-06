@@ -1,0 +1,3 @@
+mutation updateWage($id: Int!, $input: WageInput!) {
+    updateWage(id: $id, input: $input)
+}

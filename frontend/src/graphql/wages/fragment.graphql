@@ -1,0 +1,8 @@
+fragment Wage on Wage {
+    id
+    blackSalary
+    whiteSalary
+    paidWhiteSalary
+    paidBlackSalary
+    status
+}

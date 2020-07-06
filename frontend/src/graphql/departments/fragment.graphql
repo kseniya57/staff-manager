@@ -1,0 +1,5 @@
+fragment Department on Department {
+    id
+    name
+    createdAt
+}

@@ -1,0 +1,3 @@
+mutation updateAssessment($id: Int!, $input: EmployeePerformanceAssessmentInput!) {
+    updateAssessment(id: $id, input: $input)
+}

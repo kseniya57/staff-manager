@@ -1,0 +1,3 @@
+query count($table: String!, $filter: Object) {
+    count(table: $table, filter: $filter)
+}

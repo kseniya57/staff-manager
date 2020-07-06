@@ -1,0 +1,3 @@
+mutation deletePayroll($id: Int!) {
+    deletePayroll(id: $id)
+}

@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+query rights($filter: RightFilter, $pagination: Pagination) {
+    rights(filter: $filter, pagination: $pagination) {
+        ...Right
+    }
+}

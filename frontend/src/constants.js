@@ -1,0 +1,10 @@
+export const AUTH_TOKEN = 'token';
+const HOST = process.env.VUE_APP_HOST || 'localhost:4000';
+const SECURE = +process.env.VUE_APP_SECURE === 1;
+export const BASE_API_URL = `http${SECURE ? 's' : ''}://${HOST}`;
+export const GRAPHQL_PATH = process.env.GRAPHQL_PATH || '/graphql';
+export const API_URL = `${BASE_API_URL}${GRAPHQL_PATH}`;
+export const WS_ENDPOINT = `ws${SECURE ? 's' : ''}://${HOST}${GRAPHQL_PATH}`;
+export const BASE = process.env.VUE_APP_BASE;
+export const UPLOADS_URL = BASE_API_URL;
+export const DEFAULT_IMAGE = require(`@/assets/images/noImage.png`);

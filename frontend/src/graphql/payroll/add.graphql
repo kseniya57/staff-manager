@@ -1,0 +1,3 @@
+mutation addPayroll($input: PayrollInput!) {
+    addPayroll(input: $input)
+}

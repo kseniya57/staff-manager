@@ -1,0 +1,3 @@
+mutation addExpense($input: ExpenseInput!) {
+    addExpense(input: $input)
+}

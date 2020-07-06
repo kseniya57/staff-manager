@@ -1,0 +1,19 @@
+#import "./fragment.graphql"
+#import "../wages/fragment.graphql"
+
+query department($id: Int!) {
+    department(id: $id) {
+        ...Department
+        wages {
+            ...Wage
+            user {
+                id
+                name
+            }
+            position {
+                id
+                name
+            }
+        }
+    }
+}

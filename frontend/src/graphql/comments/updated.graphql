@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+subscription commentUpdated {
+    commentUpdated {
+        ...Comment
+    }
+}

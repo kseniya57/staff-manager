@@ -1,0 +1,7 @@
+#import "./fragment.graphql"
+
+query tags($filter: TagFilter, $pagination: Pagination) {
+    tags(filter: $filter, pagination: $pagination) {
+        ...Tag
+    }
+}

@@ -1,0 +1,29 @@
+input, select, textarea
+  font-weight: 300
+  font-size: 1.3rem
+  border: 1px solid #DCDFE6
+  border-radius: .4rem
+  width: 100%
+  color: $text-color--base
+
+input
+  padding: 0 1rem
+  height: 4rem
+  &[type="number"]
+    -webkit-appearance: textfield
+    -moz-appearance: textfield
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button
+      -webkit-appearance: none
+
+textarea
+  resize: none
+  padding: 1rem
+
+.form-group
+  width: 100%
+
+.label
+  display: inline-block
+  margin-bottom: .5rem
+  margin-left: .5rem
